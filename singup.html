@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate</title>
+</head>
+<body>
+    <div>
+        <h2>Regístrate</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" id="name" name="name" maxlength="50" pattern="." required>
+            <br>
+            <label for="last name">Primer Apellido</label>
+            <br>
+            <input type="text" id="last name 1" name="last name 1" maxlength="50" pattern="." required>
+            <br>
+            <label for="last name">Segundo Apellido</label>
+            <br>
+            <input type="text" id="last name 2" name="last name 2" maxlength="50" pattern="." required>
+            <br>
+            <label for="tlf">Teléfono</label>
+            <br>
+            <input type="tel" id="tlf" name="tlf" pattern="[6-7][0-9]{8}" required>
+            <br>
+            <label for="mail">Email</label>
+            <br>
+            <input type="email" id="mail" name="mail" required>
+            <br>
+            <label for="name">Contraseña</label>
+            <br>
+            <input type="text" id="password" name="password" maxlength="50" pattern="[A-Za-z0-9]*" required>
+            <p>
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto los términos y condiciones</label><br>    
+
+                <input type="checkbox" id="info" name="info">
+                <label for="info">Quiero recibir correos informando de ofertas especiales y cupones exclusivos (Recomendada)</label><br>
+            </p>
+            <input type="submit" value="Registrarme">  
+        </form>
+    </div>
+</body>
+</html>
