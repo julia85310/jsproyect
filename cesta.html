@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="cesta-style.css">
+    <script src="cesta-script.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,17 +20,14 @@
     </nav>
 
     <main>
-        <div>
-            <h2>Inicia sesión</h2>
-                <form>
-                    <input type="email" id="mail" name="mail" placeholder="email" required>
-                    <br>
-                    <input type="text" id="password" name="password" placeholder="contraseña" maxlength="50" pattern="[A-Za-z0-9]*" required>
-                    <br>
-                    <p><input type="submit" id="button" value="Siguiente"></p>
-                </form>
-            <p id="mensaje">¿No estás registrado? <a href="singup.html">Crear una cuenta</a></p>
-        </div>
+      <h2>Cesta de la compra</h2>
+      <div>
+        <h3>Verduras</h3>
+        <li>
+          <ul>Pimientos rojos: <label id="labelpimientosrojos">0</label></ul>
+        </li>
+      </div>
+      <button id="pedir">Realizar pedido</button>
     </main>
     
 

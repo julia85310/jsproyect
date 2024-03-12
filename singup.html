@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regístrate</title>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
-    <div>
-        <h2>Regístrate</h2>
-        <form>
-            <label for="name">Nombre</label>
-            <br>
-            <input type="text" id="name" name="name" maxlength="50" pattern="." required>
-            <br>
-            <label for="last name">Primer Apellido</label>
-            <br>
-            <input type="text" id="last name 1" name="last name 1" maxlength="50" pattern="." required>
-            <br>
-            <label for="last name">Segundo Apellido</label>
-            <br>
-            <input type="text" id="last name 2" name="last name 2" maxlength="50" pattern="." required>
-            <br>
-            <label for="tlf">Teléfono</label>
-            <br>
-            <input type="tel" id="tlf" name="tlf" pattern="[6-7][0-9]{8}" required>
-            <br>
-            <label for="mail">Email</label>
-            <br>
-            <input type="email" id="mail" name="mail" required>
-            <br>
-            <label for="name">Contraseña</label>
-            <br>
-            <input type="text" id="password" name="password" maxlength="50" pattern="[A-Za-z0-9]*" required>
-            <p>
-                <input type="checkbox" id="acepto" name="acepto" required>
-                <label for="acepto">Acepto los términos y condiciones</label><br>    
+    <header>
+        <h1><img src="verduras.png" width="60"> MercaVerde <img src="verduras.png" width="60"></h1>
+        <p>Compra tus frutas, verduras y legumbres ecológicas al mejor precio.</p>
+    </header>
 
-                <input type="checkbox" id="info" name="info">
-                <label for="info">Quiero recibir correos informando de ofertas especiales y cupones exclusivos (Recomendada)</label><br>
-            </p>
-            <input type="submit" value="Registrarme">  
-        </form>
-    </div>
+    <nav>
+        <a href="inicio.html"><img src="catalogo.png" width = "40"></a>
+        <a href="login.html"><img src="711769.png" width = "35"></a>
+        <a href="cesta.html"><img src="cesta.png" width = "35"></a>
+        
+    </nav>
+
+    <main>
+        <div id="registro">
+            <h2>Regístrate</h2>
+            <form>
+                <input type="text" id="name" name="name" maxlength="50" pattern="." placeholder="nombre" required>
+                <br>
+                <input type="text" id="last name 1" name="last name 1" placeholder="primer apellido" maxlength="50" pattern="." required>
+                <br>
+                <input type="text" id="last name 2" name="last name 2" maxlength="50" placeholder="segundo apellido" pattern="." required>
+                <br>
+                <input type="tel" id="tlf" name="tlf" placeholder="tlf" pattern="[6-7][0-9]{8}" required>
+                <br>
+                <input type="email" id="mail" name="mail" placeholder="email" required>
+                <br>
+                <input type="text" id="password" name="password" maxlength="50" placeholder="contraseña" pattern="[A-Za-z0-9]*" required>
+                <p id="mensaje">
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto los términos y condiciones</label><br>    
+    
+                    <input type="checkbox" id="info" name="info">
+                    <label for="info">Quiero recibir correos informando de ofertas especiales y cupones exclusivos (Recomendada)</label><br>
+                </p>
+                <input type="submit" id="button" value="Siguiente">  
+            </form>
+        </div>
+    </main>
+    
+
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/?lang=es">X</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/?locale=es_ES">Facebook</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
